@@ -1,4 +1,5 @@
 #!/bin/sh -l
+echo 'entrypoint!!'
 mkdir ~/.ssh && chmod 700 ~/.ssh
 echo "$SSH_KEY" > ~/.ssh/id_rsa && chmod 600 ~/.ssh/id_rsa
 echo "$KNOWN_HOSTS" > ~/.ssh/known_hosts && chmod 644 ~/.ssh/known_hosts
