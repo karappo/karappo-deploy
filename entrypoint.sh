@@ -1,5 +1,6 @@
 #!/bin/bash
 
+exit 1
 echo 'entrypoint!!'
 mkdir ~/.ssh && chmod 700 ~/.ssh
 echo "$SSH_KEY" > ~/.ssh/id_rsa && chmod 600 ~/.ssh/id_rsa
