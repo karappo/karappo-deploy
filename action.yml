@@ -1,10 +1,6 @@
 name: 'Karappo Deploy'
 description: 'Deployment for Karappo Inc. using karappo/drone-deploy'
 author: 'naokazuterada'
-runs:
-  using: 'docker'
-  image: 'docker://karappo/dronedeploy:drone-0.8'
-  main: 'entrypoint.sh'
 branding:
   icon: 'arrow-up'
   color: 'green'
