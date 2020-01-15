@@ -1,4 +1,4 @@
-FROM bradrydzewski/base
+FROM karappo/dronedeploy
 MAINTAINER Naokazu Terada <naokazu.terada@gmail.com>
-RUN sudo apt-get install ssh-askpass sshpass lftp
-ENTRYPOINT ["entrypoint.sh"]
+COPY entrypoint.sh /entrypoint.sh
+ENTRYPOINT ["/entrypoint.sh"]
